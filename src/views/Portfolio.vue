@@ -8,7 +8,7 @@
                     </h1>
                     <div class="inline-block">
                         <div
-                            class="w-full p-2 overflow-hidden text-5xl font-extrabold tracking-widest text-orange-400 border-r-4 border-orange-500 border-solid hover:cursor-alias drop-shadow-md whitespace-nowrap cursor-blink typing-effect hover:border-2">
+                            class="w-full px-2 overflow-hidden font-extrabold tracking-widest text-orange-400 border-r-4 border-orange-500 border-solid hover:cursor-alias drop-shadow-md whitespace-nowrap text-3xl md:text-5xl  cursor-blink typing-effect hover:border-2">
                             Favio Jasso </div>
                     </div>
                 </div>
@@ -43,9 +43,9 @@
                         </h2>
                         <p class="text-sm md:text-base">{{ t('Portfolio Landing Project Card Two Description') }}</p>
                         <button type="button" id="readMoreButtonOne"
-                            class="p-3 font-bold border-2 border-orange-500 rounded-lg hover:bg-orange-400 hover:text-white">
-                            <a href="#" class="w-full h-full">{{ t('Read More Button') }}</a>
-                        </button>
+                            class="p-3 font-bold border-2 border-orange-500 rounded-lg hover:bg-orange-400 hover:text-white"
+                            @click="modalState('id01', 'open')">{{ t('Read More Button') }}</button>
+
                         <dialog id="id01" class="w-4/5 rounded-lg">
                             <div class="p-5">
                                 <div class="flex items-center justify-between p-3">
@@ -53,15 +53,13 @@
                                             class="text-xl text-orange-400">Creative Project Lead</span></h1>
                                     <button
                                         class="px-3 py-2 text-2xl font-medium rounded-lg hover:bg-orange-400 hover:text-white"
-                                        id="closeModalOne">✖</button>
+                                        id="closeModalOne" @click="modalState('id01', 'close')">✖</button>
                                 </div>
                                 <hr class="w-[95%] m-auto">
                                 <div>
                                     <ul class="py-5 pl-8 list-disc [&>*]:p-1">
-                                        <li>
-
-                                        </li>
-                                        <li></li>
+                                        <li> {{ t('Portfolio Landing Project Card One Description 1') }} </li>
+                                        <li>{{ t('Portfolio Landing Project Card One Description 2') }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -76,16 +74,14 @@
                         <img src="../assets/images/teamliquid.png" alt="TeamLiquid" class="rounded-lg">
                     </div>
                     <div class="flex flex-col items-center justify-center gap-5">
-                        <h2 class="text-xl font-bold text-orange-600 underline md:text-3xl underline-offset-8">
-
+                        <h2 class="text-xl font-bold text-orange-600 underline md:text-3xl underline-offset-8">{{
+                            t('Portfolio Landing Project Card One Header') }}
                         </h2>
-                        <p class="text-sm md:text-base">
-
+                        <p class="text-sm md:text-base">{{ t('Portfolio Landing Project Card One Description') }}
                         </p>
-                        <button type="button" id="readMoreButtonTwo"
-                            class="p-3 font-bold border-2 border-orange-500 rounded-lg hover:bg-orange-400 hover:text-white">
-                            <a href="#" class="w-full h-full"></a>
-                        </button>
+                        <button type="button" id="readMoreButtonOne"
+                            class="p-3 font-bold border-2 border-orange-500 rounded-lg hover:bg-orange-400 hover:text-white"
+                            @click="modalState('id02', 'open')">{{ t('Read More Button') }}</button>
                         <dialog id="id02" class="w-4/5 rounded-lg">
                             <div class="p-5">
                                 <div class="flex items-center justify-between p-3">
@@ -93,15 +89,15 @@
                                             class="text-xl text-orange-400">Creative Project Lead</span></h1>
                                     <button
                                         class="px-3 py-2 text-2xl font-medium rounded-lg hover:bg-orange-400 hover:text-white"
-                                        id="closeModalTwo">✖</button>
+                                        id="closeModalTwo" @click="modalState('id02', 'close')">✖</button>
                                 </div>
                                 <hr class="w-[95%] m-auto">
                                 <div>
                                     <ul class="py-5 pl-8 list-disc [&>*]:p-1">
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>{{ t('Portfolio Landing Project Card Two Description 1') }}</li>
+                                        <li>{{ t('Portfolio Landing Project Card Two Description 2') }}</li>
+                                        <li>{{ t('Portfolio Landing Project Card Two Description 3') }}</li>
+                                        <li>{{ t('Portfolio Landing Project Card Two Description 4') }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -112,42 +108,37 @@
         </div>
         <div class="mt-10">
             <div class="flex flex-row justify-center py-5 text-3xl font-bold md:text-5xl">
-                <span></span>
+                <span>{{ t('Portfolio Landing Services Header') }}</span>
             </div>
             <div class="flex justify-center flex-row p-5 gap-5 flex-wrap [&>*]:w-[320px]">
                 <div
                     class="flex flex-col items-center justify-center gap-5 p-10 transition-all border-2 border-orange-500 rounded-lg hover:scale-105 hover:shadow-lg">
                     <i class="text-center text-orange-400 fa-solid fa-bullhorn fa-4x"></i>
-                    <p class="flex justify-center text-base font-bold text-center text-orange-600 md:text-xl">
-
-                    </p>
-                    <p class="text-sm md:text-base">
+                    <p class="flex justify-center text-base font-bold text-center text-orange-600 md:text-xl"> {{
+                        t('Portfolio Landing Services Card One Header') }} </p>
+                    <p class="text-sm md:text-base">{{ t('Portfolio Landing Services Card One Description') }}
                     </p>
                 </div>
                 <div
                     class="flex flex-col items-center justify-center gap-5 p-10 transition-all border-2 border-orange-500 rounded-lg hover:scale-105 hover:shadow-lg">
                     <i class="text-center text-orange-400 fa-solid fa-rectangle-ad fa-4x"></i>
-                    <p class="flex justify-center text-base font-bold text-center text-orange-600 md:text-xl"></p>
-
+                    <p class="flex justify-center text-base font-bold text-center text-orange-600 md:text-xl">{{
+                        t('Portfolio Landing Services Card Two Header') }}</p>
+                    <p class="text-sm md:text-base">{{ t('Portfolio Landing Services Card Two Description') }}</p>
                 </div>
                 <div
                     class="flex flex-col items-center justify-center gap-5 p-10 transition-all border-2 border-orange-500 rounded-lg hover:scale-105 hover:shadow-lg">
                     <i class="text-center text-orange-400 fa-solid fa-desktop fa-4x"></i>
-                    <p class="flex justify-center text-base font-bold text-center text-orange-600 md:text-xl">
-
-                    </p>
-                    <p class="text-sm md:text-base">
-
-                    </p>
+                    <p class="flex justify-center text-base font-bold text-center text-orange-600 md:text-xl"> {{
+                        t('Portfolio Landing Services Card Three Header') }} </p>
+                    <p class="text-sm md:text-base">{{ t('Portfolio Landing Services Card Three Description') }} </p>
                 </div>
                 <div
                     class="flex flex-col items-center justify-center gap-5 p-10 transition-all border-2 border-orange-500 rounded-lg hover:scale-105 hover:shadow-lg">
                     <i class="text-center text-orange-400 fa-solid fa-people-line fa-4x"></i>
-                    <p class="flex justify-center text-base font-bold text-center text-orange-600 md:text-xl">
-
-                    </p>
-                    <p class="text-sm md:text-base">
-                    </p>
+                    <p class="flex justify-center text-base font-bold text-center text-orange-600 md:text-xl"> {{
+                        t('Portfolio Landing Services Card Four Header') }} </p>
+                    <p class="text-sm md:text-base"> {{ t('Portfolio Landing Services Card Four Description') }} </p>
                 </div>
             </div>
         </div>
@@ -161,6 +152,15 @@ import profile from '../assets/images/faviodp.png';
 
 const { t } = useI18n();
 const profileImage = ref(profile);
+
+function modalState(id, action) {
+    const modal = document.getElementById(id);
+    if (action === 'open') {
+        modal.showModal();
+    } else {
+        modal.close();
+    }
+};
 </script>
 
 <style scoped>
