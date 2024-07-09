@@ -1,14 +1,14 @@
 <template>
     <div class="wrapper">
         <div class="flex flex-col-reverse md:flex-row" id="home">
-            <div class=" flex flex-col justify-center inline-block w-full p-3 md:p-16 md:w-3/5">
+            <div class=" flex flex-col justify-center w-full p-3 md:p-16 md:w-3/5">
                 <div class="flex items-center gap-1">
-                    <h1 class="text-3xl font-bold text-orange-400 drop-shadow-md md:text-5xl ">
+                    <h1 class="text-3xl font-extrabold text-orange-400 drop-shadow-md md:text-5xl ">
                         {{ t('Portfolio Landing Header') }}
                     </h1>
                     <div class="inline-block">
                         <div
-                            class="w-full px-2 overflow-hidden font-extrabold tracking-widest text-orange-400 border-r-4 border-orange-500 border-solid hover:cursor-alias drop-shadow-md whitespace-nowrap text-3xl md:text-5xl  cursor-blink typing-effect hover:border-2">
+                            class="w-full px-1 overflow-hidden font-extrabold tracking-wide text-orange-400 border-r-4 border-orange-500 border-solid hover:cursor-alias drop-shadow-md whitespace-nowrap text-3xl md:text-5xl  cursor-blink typing-effect hover:border-2">
                             Favio Jasso </div>
                     </div>
                 </div>
@@ -30,8 +30,8 @@
         <div class="flex flex-row justify-center py-5 text-3xl font-bold md:text-5xl">
             <span>{{ t('Portfolio Landing Project Header') }}</span>
         </div>
-        <div class="flex flex-col md:flex-row">
-            <div class="flex flex-row justify-around w-full h-auto md:w-1/2">
+        <div class="flex flex-col justify-center md:flex-row">
+            <div class="flex flex-row justify-around w-full h-auto md:w-2/5">
                 <div
                     class="flex flex-col items-center justify-center h-full gap-2 p-5 m-2 transition-all scale-95 border-2 border-orange-500 rounded-lg shadow-md md:gap-7 hover:scale-100">
                     <div class=" flex flex-col justify-center items-center h-[420px] ">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row justify-around w-full h-auto md:w-1/2">
+            <div class="flex flex-row justify-around w-full h-auto md:w-2/5">
                 <div
                     class="flex flex-col items-center justify-center h-full p-5 m-2 transition-all scale-95 border-2 border-orange-500 rounded-lg shadow-md gap-7 hover:scale-100">
                     <div class=" flex flex-col justify-center items-center h-[420px] ">
@@ -157,15 +157,27 @@ function modalState(id, action) {
     const modal = document.getElementById(id);
     if (action === 'open') {
         modal.showModal();
+        document.body.classList.add('no-scroll');
     } else {
         modal.close();
+        document.body.classList.remove('no-scroll');
     }
-};
+}
+
 </script>
 
 <style scoped>
 .cursor-blink {
     animation: cursor 1s step-end infinite;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+dialog {
+    max-height: 90vh;
+    overflow: auto;
 }
 
 .typing-effect {
