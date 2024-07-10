@@ -23,13 +23,12 @@
             accompanied by 4 years of experience working with high-profile entertainment brands like
             Team Liquid and the San Antonio Spurs.
         </p>
-        <button class="p-2 font-medium border-2 border-orange-500 rounded-lg btn hover:text-white hover:bg-orange-400" id="read">
-            <a id="read"> Read More </a>
+        <button class="p-2 font-medium border-2 border-orange-500 rounded-lg btn hover:text-white hover:bg-orange-400" id="read" @click="modal('modal', 'open')">Read More
         </button>
         <dialog id="modal" class="w-4/5 rounded-lg">
             <div class="p-5">
                 <div class="flex justify-end">
-                    <button id="close" class="px-4 py-2 rounded-lg hover:bg-slate-100">&times;</button>
+                    <button id="close" class="px-4 py-2 rounded-lg hover:bg-slate-100" @click="modal('modal', 'close')">&times;</button>
                 </div>
                 <div class="p-5">
                     <p>
@@ -77,8 +76,7 @@
 <!-- End Second Section -->
 </template>
 
-<script>
-
+<script setup>
 const readModal = document.getElementById('read')
 const close = document.getElementById('close')
 // readModal.addEventListener('click', function () {
@@ -91,6 +89,16 @@ const close = document.getElementById('close')
 //     modal.close()
 //     console.log('closed')
 // })
+
+function modal(modalName, state) {
+    const readModal = document.getElementById(modalName);
+    console.log(readModal);
+    if (state === "open") {
+        readModal.showModal()
+    } else {
+        readModal.close();
+    }
+}
 </script>
 
 <style scoped></style>
