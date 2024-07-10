@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper relative w-full overflow-hidden">
-        <div class="flex transition-transform duration-500 ease justify-center" id="carousel-inner">
+        <div class="flex transition-transform duration-500 ease items-center justify-center" id="carousel-inner">
             <div class="flex-none w-full carousel-item ">
                 <img src="../assets/images/1a.png" alt="Image" class="border-b-4 border-orange-400">
                 <div class="flex items-center justify-center m-2 md:m-5">

@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer base {
   * {
-    @apply font-sans;
+    @apply font-sans transition-all;
   }
   h1 {
     @apply text-4xl;
