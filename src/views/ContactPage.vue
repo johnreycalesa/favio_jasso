@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col items-center justify-center bg-cover xs:py-10 md:p-20"
-        :style="{ backgroundImage: 'url(/public/images/bgpic.jpg)' }">
+    <div class="wrapper flex flex-col items-center justify-center bg-cover xs:py-10 md:p-20" 
+        :style="{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }">
         <div class="flex flex-col items-center justify-center w-3/5 gap-5 xs:w-full">
             <h1 class="text-xl font-bold text-center text-white md:text-3xl drop-shadow-lg">Let's tell the story about
                 your business.</h1>
@@ -97,7 +97,7 @@
     </dialog>
 
     <!-- Booking Form -->
-    <form @submit.prevent="submitForm" class="flex flex-col gap-5 p-5" id="form"> -->
+    <form @submit.prevent="submitForm" class="wrapper flex flex-col gap-5 p-5" id="form">
         <h2 class="font-bold text-xl text-[#FF7C03]">Select Service</h2>
         <p class="text-center">Set up consulting Today!</p>
         <template v-if="sessionError">
@@ -203,6 +203,9 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import { getContact } from '../services/api.js'; // Import as named export
+import bgImage from '@/assets/images/bgpic.jpg';
+
+const backgroundImage = ref(bgImage);
 
 const formData = ref({});
 

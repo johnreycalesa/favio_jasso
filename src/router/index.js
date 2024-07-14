@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import LoginView from '../views/LoginView.vue'
+import AdminView from '../views/AdminView.vue'
 import Portfolio from '../views/PortfolioPage.vue'
 import Advocacy from '../views/AdvocacyPage.vue'
 import About from '../views/AboutPage.vue'
@@ -27,6 +28,16 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/admin/login',
+      name: 'login',
+      component: ''
+    },
+    {
+      path: '/admin/admin',
+      name: 'admin',
+      component: AdminView
     }
   ]
 })
