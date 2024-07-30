@@ -1,10 +1,9 @@
 <script setup>
-import HomeView from './views/HomeView.vue'
-import AdminView from './views/AdminView.vue';
+import Page from './views/Page.vue'
 </script>
 
 <template>
-  <HomeView />
+  <Page />
 </template>
 
 <style scoped></style>

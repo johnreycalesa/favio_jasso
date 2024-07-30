@@ -1,45 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer base {
-  * {
-    @apply font-sans transition-all;
-  }
-  h1 {
-    @apply text-4xl;
-  }
-  h2 {
-    @apply text-3xl;
-  }
-  h3 {
-    @apply text-2xl;
-  }
-  h4 {
-    @apply text-xl;
-  }
-  h5 {
-    @apply text-lg;
-  }
-  h6 {
-    @apply text-base;
-  }
-  p {
-    @apply mb-4;
-  }
-  input,
-  textarea {
-    @apply p-2 border rounded-lg focus:outline-none focus:border-orange-500;
-  }
-  code {
-    @apply font-mono text-sm;
-  }
-  .wrapper {
-    @apply max-w-[2000px] w-full m-auto;
-  }
-  dialog {
-    @apply border-2 border-orange-400;
-  }
-  dialog::backdrop {
-    @apply bg-orange-400 bg-opacity-70;
+@import './base.css';
+@import url(https://fonts.bunny.net/css?family=inter:500|poppins:500);
+
+#app {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  /* padding: 2rem;
+  font-weight: normal; */
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.1;
+}
+
+/* a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
   }
 }
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
