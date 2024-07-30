@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="bg-orange-400 h-full w-full p-5">
+  <div class="bg-tertiary h-full w-full p-5">
     <div class="wrapper flex justify-between items-center">
       <h1 class="text-4xl font-bold">Favio Jasso</h1>
       <div>
