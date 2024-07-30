@@ -15,77 +15,77 @@
 const icons = [
     {
         name: 'html',
-        url: '/public/icons/html.svg',
+        url: '/icons/html.svg',
         color: '#E44D26',
     },
     {
         name: 'css',
-        url: '/public/icons/css.svg',
+        url: '/icons/css.svg',
         color: '#1172B8',
     },
     {
         name: 'javascript',
-        url: '/public/icons/javascript.svg',
+        url: '/icons/javascript.svg',
         color: '#FFCA28',
     },
     {
         name: 'bootstrap',
-        url: '/public/icons/bootstrap.svg',
+        url: '/icons/bootstrap.svg',
         color: '#563D7C',
     },
     {
         name: 'java',
-        url: '/public/icons/java.svg',
+        url: '/icons/java.svg',
         color: '#E76F00',
     },
     {
         name: 'python',
-        url: '/public/icons/python.svg',
+        url: '/icons/python.svg',
         color: '#2170B0',
     },
     {
         name: 'go',
-        url: '/public/icons/go.svg',
+        url: '/icons/go.svg',
         color: '#00ACD7',
     },
     {
         name: 'mysql',
-        url: '/public/icons/mysql.svg',
+        url: '/icons/mysql.svg',
         color: '#F8981D',
     },
     {
         name: 'dbeaver',
-        url: '/public/icons/dbeaver.svg',
+        url: '/icons/dbeaver.svg',
         color: '#45352F',
     },
     {
         name: 'git',
-        url: '/public/icons/git.svg',
+        url: '/icons/git.svg',
         color: '#EE513B',
     },
     {
         name: 'r',
-        url: '/public/icons/r.svg',
+        url: '/icons/r.svg',
         color: '#2066B8',
     },
     {
         name: 'msexcel',
-        url: '/public/icons/msexcel.svg',
+        url: '/icons/msexcel.svg',
         color: '#215037',
     },
     {
         name: 'matplotlib',
-        url: '/public/icons/matplotlib.svg',
+        url: '/icons/matplotlib.svg',
         color: '#E4925C',
     },
     {
         name: 'pandas',
-        url: '/public/icons/pandas.svg',
+        url: '/icons/pandas.svg',
         color: '#E4925C',
     },
     {
         name: 'tableau',
-        url: '/public/icons/tableau.svg',
+        url: '/icons/tableau.svg',
         color: '#E8762C',
     }
 
