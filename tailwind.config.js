@@ -19,6 +19,10 @@ export default {
           light: '#FFC040',
           dark: '#C78300'
         }
+      },
+
+      boxShadow: {
+        normal: '2.5px 2.5px 2.5px rgba(0, 0, 0, 0.15)'
       }
     }
   },
