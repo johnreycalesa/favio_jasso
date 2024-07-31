@@ -1,36 +1,35 @@
 <script setup></script>
 
 <template>
-  <div class="bg-tertiary h-full w-full p-5 ">
-    <header class="container mx-auto flex w-full items-center justify-between py-4 px-6">
+  <div class="bg-tertiary w-full p-2 sm:p-5 fixed top-0 h-min shadow-md">
+    <header class="container mx-auto flex w-full items-center justify-between py-4 px-2 sm:px-6">
       <a href="#">
-        <div class="w-full text-center text-4xl font-bold sm:w-fit sm:text-left">
+        <div class="w-full text-center text-xl sm:text-4xl font-bold sm:w-fit sm:text-left">
           <span class="text-white">FAVIO JASSO</span>
         </div>
       </a>
-      <nav class="hidden bg-tertiary text-base dark:bg-slate-900 sm:block">
+      <nav class="hidden bg-tertiary text-base sm:block">
         <ul class="flex items-center space-x-2">
           <li class="group relative">
-            <a class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-black no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+            <a class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-white no-underline transition hover:text-orange-800"
               href="/">
               Home
             </a>
           </li>
           <li class="group relative">
-            <a class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-black no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+            <a class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-white no-underline transition hover:text-orange-800"
               href="#">
               Services
             </a>
-
           </li>
           <li class="group relative">
-            <a class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-black no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+            <a class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-white no-underline transition hover:text-orange-800"
               href="/about">
               About
             </a>
           </li>
           <li class="group relative">
-            <a class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-900 no-underline transition hover:text-slate-900 dark:text-slate-50 dark:hover:text-slate-50"
+            <a class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-white no-underline transition hover:text-orange-800"
               href="/contact">
               Contact
             </a>
@@ -45,7 +44,7 @@
         </svg>
       </button>
       <nav
-        class="fixed -right-1/2 top-0 z-20 h-full w-1/2 transform overflow-y-auto bg-white py-4 text-base transition dark:bg-slate-900 sm:hidden">
+        class="fixed -right-1/2 top-0 z-20 h-full w-1/2 transform overflow-y-auto bg-white py-4 text-base transition sm:hidden">
         <ul class="flex flex-col space-y-2">
           <li class="text-right">
             <button class="px-6 py-2 text-slate-400 hover:text-slate-900 dark:hover:text-slate-50">
