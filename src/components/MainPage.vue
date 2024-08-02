@@ -3,7 +3,6 @@ import Landing from './mini_components/landing_page.vue'
 import Skills from './mini_components/skills_page.vue'
 import Experience from './mini_components/experience_page.vue'
 import Project from './mini_components/project_page.vue'
-import Contact from './mini_components/contacts_page.vue'
 </script>
 
 <template>
@@ -12,7 +11,6 @@ import Contact from './mini_components/contacts_page.vue'
     <Skills />
     <Experience />
     <Project />
-    <Contact />
   </div>
 </template>
 

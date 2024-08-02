@@ -1,10 +1,10 @@
 <template>
   <div class="flex justify-center items-center w-full h-full sm:h-[850px] p-2 sm:p-12 wrapper">
-    <div class="flex justify-around items-center w-full flex-col-reverse sm:flex-row ">
+    <div class="flex justify-around items-center w-full flex-col-reverse sm:flex-row">
       <div class="w-full sm:w-1/2 flex flex-col gap-3 p-2 sm:p-5">
         <div>
           <h1 class="text-2xl md:text-4xl font-extrabold text-secondary">Hi! I'm</h1>
-          <h1 class="text-2xl md:text-4xl  font-extrabold text-secondary">Favio Valentino Jasso</h1>
+          <h1 class="text-2xl md:text-4xl font-extrabold text-secondary">Favio Valentino Jasso</h1>
         </div>
         <div>
           <p class="text-base md:text-xl">
@@ -14,8 +14,10 @@
           </p>
         </div>
         <div>
-          <button type="button"
-            class="rounded border-2 border-secondary p-2 sm:p-3 hover:bg-primary hover:text-white hover:animate-bounce">
+          <button
+            type="button"
+            class="rounded border-2 border-secondary p-2 sm:p-3 hover:bg-primary hover:text-white hover:animate-bounce"
+          >
             Get Started
           </button>
         </div>
@@ -24,9 +26,12 @@
         </div>
       </div>
       <div class="w-[80%] sm:w-1/2 flex justify-center items-center p-2 mt-32 sm:p-5">
-        <img src="https://picsum.photos/200.webp" alt=""
-          class="size-full sm:size-[300px] lg:size-[550px] object-cover rounded-bl-[250px] rounded-tl-xl rounded-br-xl rounded-tr-xl transition-all"
-          id="box" />
+        <img
+          src="/public/image/favio.png"
+          alt=""
+          class="w-full sm:w-[300px] lg:w-[550px] object-cover rounded-bl-[250px] rounded-tl-xl rounded-br-xl rounded-tr-xl transition-all"
+          id="box"
+        />
       </div>
     </div>
   </div>
