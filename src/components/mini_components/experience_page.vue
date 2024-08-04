@@ -11,7 +11,7 @@
       <div
         v-for="(item, index) in experiences"
         :key="index"
-        class="border-2 border-gray-200 border-opacity-60 rounded p-5 lg:p-10 m-2 flex justify-center items-center h-max gap-5 md:flex-col w-full md:w-[40%] lg:w-[30%]"
+        class="border-2 bg-white border-gray-200 border-opacity-60 rounded p-5 lg:p-10 m-2 flex justify-center items-center h-max gap-5 md:flex-col w-full md:w-[40%] lg:w-[30%]"
       >
         <div class="w-1/2 md:w-full flex justify-center items-center flex-col gap-3">
           <img
@@ -25,7 +25,7 @@
           <h1 class="text-xl sm:text-2xl font-medium">{{ item.position }}</h1>
           <button
             type="button"
-            class="text-sm sm:text-xl text-secondary border-2 bg-white border-secondary p-2 w-full rounded border-radius shadow-normal"
+            class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal"
             @click="openPopup(item)"
           >
             Read More

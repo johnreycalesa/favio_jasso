@@ -27,9 +27,9 @@
       </div>
       <div class="w-[80%] sm:w-1/2 flex justify-center items-center p-2 mt-32 sm:p-5">
         <img
-          src="/public/image/favio.png"
+          src="/image/favio.png"
           alt=""
-          class="w-full sm:w-[300px] lg:w-[550px] object-cover rounded-bl-[250px] rounded-tl-xl rounded-br-xl rounded-tr-xl transition-all"
+          class="w-full sm:w-[300px] lg:w-[550px] object-cover rounded-bl-[100px] md:rounded-bl-[250px] rounded-tl-xl rounded-br-xl rounded-tr-xl transition-all"
           id="box"
         />
       </div>
@@ -40,10 +40,21 @@
 <script setup></script>
 
 <style scoped>
-#box:hover {
-  box-shadow:
-    -25px 25px #d9d9d9,
-    25px -25px #ff9500;
-  border-radius: 10px 10px 10px 250px;
+@media screen and (max-width: 767px) {
+  #box {
+    box-shadow:
+      -25px 25px #ffd09b,
+      25px -25px #ff9500;
+    border-radius: 10px 10px 10px 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #box:hover {
+    box-shadow:
+      -25px 25px #ffd09b,
+      25px -25px #ff9500;
+    border-radius: 10px 10px 10px 250px;
+  }
 }
 </style>

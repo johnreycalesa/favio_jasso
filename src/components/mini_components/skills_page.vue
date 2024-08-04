@@ -9,7 +9,7 @@
     </div>
     <div class="flex justify-around items-center w-full flex-wrap gap-2 sm:gap-10">
       <div
-        class="size-[100px] sm:size-[150px] md:size-[200px] border-2 border-opacity-60 rounded-lg flex justify-around items-center p-2 sm:p-5"
+        class="size-[100px] bg-white sm:size-[150px] md:size-[200px] border-2 border-opacity-60 rounded-lg flex justify-around items-center p-2 sm:p-5"
         v-for="(item, index) in icons"
         :key="index"
         :style="`border-color: ${item.color}`"
