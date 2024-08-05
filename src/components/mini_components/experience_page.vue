@@ -1,43 +1,30 @@
 h1
 <template>
-  <div class="wrapper px-2 py-10">
+  <div class="wrapper px-0 md:px-2 py-10">
     <div class="flex justify-center mb-5">
-      <h3
-        class="text-xl sm:text-3xl md:text-5xl font-bold underline decoration-wavy uppercase text-primary"
-      >
+      <h3 class="text-xl sm:text-3xl md:text-5xl font-bold underline decoration-wavy uppercase text-primary">
         Experience
       </h3>
     </div>
     <div class="flex justify-center w-full flex-wrap gap-2 sm:gap-5">
-      <div
-        v-for="(item, index) in experiences"
-        :key="index"
-        class="border-2 bg-white border-gray-200 border-opacity-60 rounded-xl p-5 lg:p-10 m-2 flex justify-between items-center gap-5 md:flex-col w-full md:w-[40%] lg:w-[30%] hover:shadow-2xl shadow-normal"
-      >
+      <div v-for="(item, index) in experiences" :key="index"
+        class="border-2 bg-white border-gray-200 border-opacity-60 rounded-xl p-5 lg:p-10 m-2 flex justify-between items-center gap-5 md:flex-col w-full md:w-[40%] lg:w-[30%] hover:shadow-2xl shadow-normal">
         <div class="w-1/2 md:w-full flex justify-center items-center flex-col gap-3">
-          <img
-            class="w-full object-contain object-center size-[125px] sm:size-[150px] md:size-[200px]"
-            :src="item.image"
-            :alt="item.college + ' icon'"
-          />
+          <img class="w-full object-contain object-center size-[125px] sm:size-[150px] md:size-[200px]"
+            :src="item.image" :alt="item.college + ' icon'" />
         </div>
         <div class="w-1/2 md:w-full flex justify-center items-center text-center flex-col gap-3">
           <h1 class="text-xl sm:text-2xl font-bold text-secondary w-full">{{ item.college }}</h1>
-          <h1 class="text-xl sm:text-2xl font-medium md:max-w-[220px]">{{ item.position }}</h1>
-          <button
-            type="button"
+          <h1 class="text-base sm:text-2xl font-medium md:max-w-[220px]">{{ item.position }}</h1>
+          <button type="button"
             class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal hover:bg-secondary hover:text-white"
-            @click="openPopup(item)"
-          >
+            @click="openPopup(item)">
             Read More
           </button>
         </div>
       </div>
     </div>
-    <div
-      v-if="showDialog"
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
-    >
+    <div v-if="showDialog" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div class="bg-white p-5 rounded max-w-4xl w-full border-2 border-primary-light">
         <h2 class="text-2xl font-bold mb-4">{{ selectedExperience.college }}</h2>
         <p class="text-sm md:text-lg mb-4" v-html="selectedExperience.description"></p>

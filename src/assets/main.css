@@ -50,6 +50,25 @@ p {
   line-height: 1.75rem;
 }
 
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #5f4040 #fff;
+  border-radius: 20px;
+}
+
+/* For Chrome, EDGE, Opera, Others */
+.scrollbar::-webkit-scrollbar {
+  width: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
 /* a,
 .green {
   text-decoration: none;

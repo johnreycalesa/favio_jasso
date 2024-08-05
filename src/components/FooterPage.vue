@@ -3,7 +3,7 @@
 <template>
   <div class="wrapper pt-2 md:pt-10">
     <div
-      class="px-5 flex h-auto flex-row justify-around py-5 sm:py-10 lg:py-24 bg-tertiary-light text-white xl:rounded-t-lg">
+      class="p-0 md:px-5 flex h-auto flex-row justify-around py-2 sm:py-10 lg:py-24 bg-tertiary-light text-white xl:rounded-t-lg">
       <form
         class="flex flex-col w-full md:max-w-[675px] h-full md:max-h-[587px] gap-3 p-5 md:p-14 sm:bg-white rounded-lg"
         @submit.prevent="sendEmail">
@@ -31,7 +31,7 @@
             Message
           </span>
           <textarea
-            class="w-full h-32 bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2 resize-none"
+            class="w-full h-32 bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2 resize-none scrollbar "
             placeholder="Enter your Message" id="message" required></textarea>
         </div>
         <div class="flex flex-col gap-3">

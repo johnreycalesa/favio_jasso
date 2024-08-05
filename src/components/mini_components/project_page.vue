@@ -1,39 +1,29 @@
 <template>
-  <div class="wrapper px-2 py-10">
+  <div class="wrapper px-0 md:px-2 py-10">
     <div class="flex justify-center mb-5">
-      <h3
-        class="text-xl sm:text-3xl md:text-5xl font-bold underline decoration-wavy uppercase text-primary"
-      >
+      <h3 class="text-xl sm:text-3xl md:text-5xl font-bold underline decoration-wavy uppercase text-primary">
         PROJECTS
       </h3>
     </div>
     <div class="flex justify-center w-full flex-wrap gap-2 sm:gap-5">
-      <div
-        v-for="items in experiences"
-        :key="items"
-        class="border-2 bg-white border-gray-200 border-opacity-60 rounded-xl m-2 p-2 gap-2 flex justify-between items-center md:flex-col w-full md:w-[40%] lg:w-[30%] hover:shadow-2xl shadow-normal"
-      >
+      <div v-for="items in experiences" :key="items"
+        class="border-2 bg-white border-gray-200 border-opacity-60 rounded-xl m-2 p-2 gap-2 flex justify-between items-center md:flex-col w-full md:w-[40%] lg:w-[30%] hover:shadow-2xl shadow-normal">
         <div class="w-1/2 h-full flex md:w-full">
-          <img
-            class="size-full rounded md:rounded-t-lg border-b-2 object-fill"
-            :src="items.image"
-            :alt="items.description"
-          />
+          <img class="size-full rounded md:rounded-t-lg border-b-2 object-fill" :src="items.image"
+            :alt="items.description" />
         </div>
         <div class="w-1/2 md:w-full p-2 md:p-7 flex flex-col justify-center items-center gap-3">
           <h1 class="text-base sm:text-lg font-bold">{{ items.position }}</h1>
           <h1 class="text-base font-medium text-center hidden sm:block">{{ items.description }}</h1>
           <div class="w-full flex flex-col md:flex-row gap-3">
             <button
-              class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal hover:bg-secondary hover:text-white"
-            >
+              class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal hover:bg-secondary hover:text-white">
               <a :href="items.link" target="_blank">
                 {{ items.button }}
               </a>
             </button>
             <button
-              class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal hover:bg-secondary hover:text-white"
-            >
+              class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal hover:bg-secondary hover:text-white">
               <a :href="items.videoLink" target="_blank">Video</a>
             </button>
           </div>
