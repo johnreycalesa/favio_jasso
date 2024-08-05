@@ -1,15 +1,15 @@
 <script setup>
-import { ref } from 'vue'
+// import { ref } from 'vue'
 
-const isNavOpen = ref(false)
+// const isNavOpen = ref(false)
 
-const toggleNav = () => {
-  isNavOpen.value = !isNavOpen.value
-}
+// const toggleNav = () => {
+//   isNavOpen.value = !isNavOpen.value
+// }
 </script>
 
 <template>
-  <div class="bg-tertiary w-full p-2 sm:p-5 fixed top-0 h-min shadow-md">
+  <!-- <div class="bg-tertiary w-full p-2 sm:p-5 fixed top-0 h-min shadow-md">
     <header
       class="container mx-auto flex w-full items-center relative justify-between py-4 px-2 sm:px-6"
     >
@@ -60,7 +60,6 @@ const toggleNav = () => {
         title="Open navigation menu"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="size-8 fill-white" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path
             fill="#ffffff"
             d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
@@ -82,7 +81,6 @@ const toggleNav = () => {
                 class="size-7 fill-white"
                 viewBox="0 0 448 512"
               >
-                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
                   fill="#ffffff"
                   d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
@@ -133,7 +131,8 @@ const toggleNav = () => {
         </ul>
       </nav>
     </header>
-  </div>
+  </div> -->
+  <div></div>
 </template>
 
 <style scoped>

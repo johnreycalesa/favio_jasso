@@ -18,7 +18,7 @@
             Full Name
           </span>
           <input
-            class="w-full bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400"
+            class="w-full bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2"
             type="text"
             placeholder="Enter your Name"
             required
@@ -31,7 +31,7 @@
             Email
           </span>
           <input
-            class="w-full bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400"
+            class="w-full bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 border-2 focus:ring-orange-400"
             type="email"
             placeholder="Enter your email address"
             required
@@ -44,7 +44,7 @@
             Message
           </span>
           <textarea
-            class="w-full h-32 bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400"
+            class="w-full h-32 bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2"
             placeholder="Enter your Message"
             required
           ></textarea>

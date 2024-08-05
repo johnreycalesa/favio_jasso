@@ -1,7 +1,6 @@
 <script setup>
 import Header from '../components/HeaderPage.vue'
 import Main from '../components/MainPage.vue'
-import Footer from '../components/FooterPage.vue'
 </script>
 
 <template>

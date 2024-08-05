@@ -1,31 +1,32 @@
+h1
 <template>
   <div class="wrapper px-2 py-10">
     <div class="flex justify-center mb-5">
-      <h1
+      <h3
         class="text-xl sm:text-3xl md:text-5xl font-bold underline decoration-wavy uppercase text-primary"
       >
         Experience
-      </h1>
+      </h3>
     </div>
     <div class="flex justify-center w-full flex-wrap gap-2 sm:gap-5">
       <div
         v-for="(item, index) in experiences"
         :key="index"
-        class="border-2 bg-white border-gray-200 border-opacity-60 rounded p-5 lg:p-10 m-2 flex justify-center items-center h-max gap-5 md:flex-col w-full md:w-[40%] lg:w-[30%]"
+        class="border-2 bg-white border-gray-200 border-opacity-60 rounded-xl p-5 lg:p-10 m-2 flex justify-between items-center gap-5 md:flex-col w-full md:w-[40%] lg:w-[30%] hover:shadow-2xl shadow-normal"
       >
         <div class="w-1/2 md:w-full flex justify-center items-center flex-col gap-3">
           <img
             class="w-full object-contain object-center size-[125px] sm:size-[150px] md:size-[200px]"
             :src="item.image"
-            alt="blog"
+            :alt="item.college + ' icon'"
           />
         </div>
         <div class="w-1/2 md:w-full flex justify-center items-center text-center flex-col gap-3">
-          <h1 class="text-xl sm:text-2xl font-bold text-secondary">{{ item.college }}</h1>
-          <h1 class="text-xl sm:text-2xl font-medium">{{ item.position }}</h1>
+          <h1 class="text-xl sm:text-2xl font-bold text-secondary w-full">{{ item.college }}</h1>
+          <h1 class="text-xl sm:text-2xl font-medium md:max-w-[220px]">{{ item.position }}</h1>
           <button
             type="button"
-            class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal"
+            class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal hover:bg-secondary hover:text-white"
             @click="openPopup(item)"
           >
             Read More
@@ -63,7 +64,7 @@ const experiences = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, facilis?'
   },
   {
-    college: 'LetsPlott Inc.',
+    college: 'LetsPlott Incorporated',
     position: 'Social Media Analyst',
     image: '/image/plott.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, facilis?'

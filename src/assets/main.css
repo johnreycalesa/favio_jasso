@@ -1,6 +1,14 @@
 @import './base.css';
 @import url(https://fonts.bunny.net/css?family=inter:500|poppins:500);
 
+* {
+  @apply transition-all m-0 p-0 box-border;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 #app {
   max-width: 100%;
   margin: 0 auto;
@@ -9,8 +17,6 @@
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
-  /* padding: 2rem;
-  font-weight: normal; */
 }
 
 .wrapper {
