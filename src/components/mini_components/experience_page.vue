@@ -25,9 +25,9 @@ h1
       </div>
     </div>
     <div v-if="showDialog" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div class="bg-white p-5 rounded max-w-lg w-full border-2 border-primary-light">
+      <div class="bg-white p-5 rounded max-w-4xl w-full border-2 border-primary-light">
         <h2 class="text-2xl font-bold mb-4">{{ selectedExperience.college }}</h2>
-        <p class="text-lg mb-4" v-html="selectedExperience.description"></p>
+        <p class="text-sm md:text-lg mb-4" v-html="selectedExperience.description"></p>
         <button @click="closePopup" class="text-white bg-primary px-4 py-2 rounded">Close</button>
       </div>
     </div>
@@ -42,7 +42,7 @@ const experiences = [
     college: 'County College of Morris',
     position: 'Software Dev. & IT, Intern',
     image: '/image/college.png',
-    description: ` <ul>
+    description: ` <ul class="ml-3 list-disc">
   <li>Automated business processes by developing dynamic macros in <strong> VBA & Python </strong> , increasing productivity by 50%</li>
   <li>Provided <strong> technical support and troubleshooting</strong> for both hardware and software issues across the college</li>
   <li>Helped in the setup, configuration, and maintenance of servers, workstations, and other IT equipment</li>
@@ -53,7 +53,7 @@ const experiences = [
     college: 'Country College of Morris',
     position: 'Data Analyst and Research, intern',
     image: '/image/college.png',
-    description: `<ul>
+    description: `<ul class="ml-3 list-disc">
     <li>Maintains, cleans, and updates <strong> Microsoft  Excel </strong> database of student enrollment in continuing education certifications.</li>
     <li>Leveraged <strong> Python </strong>  to manipulate, explore, clean analyze and report data on student enrollment.</li>
     <li>Develop <strong> Tableau </strong> dashboards visualizing net spend, conducting enrollment analysis and creating key insights.</li>
@@ -66,7 +66,7 @@ const experiences = [
     college: 'LetsPlott Incorporated',
     position: 'Social Media Analyst',
     image: '/image/plott.png',
-    description: `<ul>
+    description: `<ul class="ml-3 list-disc">
     <li>Implement and monitor A/B tests for website, app, and social media pages, using relevant tools and platforms (e.g., <strong> Google Analytics, Facebook Ads Manager </strong> ), which increased e-commerce sales growth of 20% for 3 quarters. </li>
     <li>Directed all content and strategy on TikTok, YouTube Instagram, and Facebook; Instagram engagement increased by <strong> 50% over 6 months </strong>, 35 million global impressions combined. </li>
     <li>Developed and implemented a social media strategy that increased followers on Instagram by <strong> 30% in 3 months </strong> and engagement by 50% in 6 months. </li>
