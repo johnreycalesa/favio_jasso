@@ -28,7 +28,7 @@ const toggleNav = () => {
         <ul class="flex items-center space-x-2">
           <li class="group relative">
             <a
-              class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-orange-950 hover:text-white no-underline transition"
+              class="block whitespace-nowrap px-3 py-2 text-sm md:text-xl font-semibold text-orange-950 hover:text-white no-underline transition"
               href="#home"
             >
               Home
@@ -36,7 +36,7 @@ const toggleNav = () => {
           </li>
           <li class="group relative">
             <a
-              class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-orange-950 hover:text-white no-underline transition"
+              class="block whitespace-nowrap px-3 py-2 text-sm md:text-xl font-semibold text-orange-950 hover:text-white no-underline transition"
               href="#skills"
             >
               Skills
@@ -44,7 +44,7 @@ const toggleNav = () => {
           </li>
           <li class="group relative">
             <a
-              class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-orange-950 hover:text-white no-underline transition"
+              class="block whitespace-nowrap px-3 py-2 text-sm md:text-xl font-semibold text-orange-950 hover:text-white no-underline transition"
               href="#experience"
             >
               Experience
@@ -52,7 +52,7 @@ const toggleNav = () => {
           </li>
           <li class="group relative">
             <a
-              class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-orange-950 hover:text-white no-underline transition"
+              class="block whitespace-nowrap px-3 py-2 text-sm md:text-xl font-semibold text-orange-950 hover:text-white no-underline transition"
               href="#projects"
             >
               Projects
@@ -60,7 +60,7 @@ const toggleNav = () => {
           </li>
           <li class="group relative">
             <a
-              class="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-orange-950 hover:text-white no-underline transition"
+              class="block whitespace-nowrap px-3 py-2 text-sm md:text-xl font-semibold text-orange-950 hover:text-white no-underline transition"
               href="#contact"
             >
               Contact
@@ -106,7 +106,7 @@ const toggleNav = () => {
           </li>
           <li class="group relative w-full overflow-x-visible text-right">
             <a
-              class="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-orange-950 hover:text-white no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+              class="mx-4 block whitespace-nowrap px-3 py-2 text-sm md:text-xl font-semibold text-orange-950 hover:text-white no-underline transition dark:hover:text-slate-50"
               href="#home"
             >
               Home
@@ -114,7 +114,7 @@ const toggleNav = () => {
           </li>
           <li class="group relative w-full overflow-x-visible text-right">
             <a
-              class="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-orange-950 hover:text-white no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+              class="mx-4 block whitespace-nowrap px-3 py-2 text-sm md:text-xl font-semibold text-orange-950 hover:text-white no-underline transition dark:hover:text-slate-50"
               href="#skills"
             >
               Skills
@@ -122,7 +122,7 @@ const toggleNav = () => {
           </li>
           <li class="group relative w-full overflow-x-visible text-right">
             <a
-              class="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-orange-950 hover:text-white no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+              class="mx-4 block whitespace-nowrap px-3 py-2 text-sm md:text-xl font-semibold text-orange-950 hover:text-white no-underline transition dark:hover:text-slate-50"
               href="#experience"
             >
               Experiences
@@ -130,7 +130,7 @@ const toggleNav = () => {
           </li>
           <li class="group relative w-full overflow-x-visible text-right">
             <a
-              class="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-orange-950 hover:text-white no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+              class="mx-4 block whitespace-nowrap px-3 py-2 text-sm md:text-xl font-semibold text-orange-950 hover:text-white no-underline transition dark:hover:text-slate-50"
               href="#projects"
             >
               Projects
@@ -138,7 +138,7 @@ const toggleNav = () => {
           </li>
           <li class="group relative w-full overflow-x-visible text-right">
             <a
-              class="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-orange-950 hover:text-white no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+              class="mx-4 block whitespace-nowrap px-3 py-2 text-sm md:text-xl font-semibold text-orange-950 hover:text-white no-underline transition dark:hover:text-slate-50"
               href="#contact"
             >
               Contact

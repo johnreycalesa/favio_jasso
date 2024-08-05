@@ -3,10 +3,11 @@
 <template>
   <div class="wrapper pt-2 md:pt-10">
     <div
-      class="px-5 flex flex-row justify-around py-5 sm:py-10 lg:py-24 bg-tertiary-light text-white xl:rounded-t-lg"
+      class="px-5 flex h-auto flex-row justify-around py-5 sm:py-10 lg:py-24 bg-tertiary-light text-white xl:rounded-t-lg"
     >
       <form
         class="flex flex-col w-full md:max-w-[675px] h-full md:max-h-[587px] gap-3 p-5 md:p-14 sm:bg-white rounded-lg"
+        @submit.prevent="sendEmail"
       >
         <div class="text-2xl md:text-4xl font-bold text-white sm:text-primary">
           Connect with me!
@@ -21,6 +22,7 @@
             class="w-full bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2"
             type="text"
             placeholder="Enter your Name"
+            id="name"
             required
           />
         </div>
@@ -34,6 +36,7 @@
             class="w-full bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 border-2 focus:ring-orange-400"
             type="email"
             placeholder="Enter your email address"
+            id="email"
             required
           />
         </div>
@@ -44,8 +47,9 @@
             Message
           </span>
           <textarea
-            class="w-full h-32 bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2"
+            class="w-full h-32 bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2 resize-none"
             placeholder="Enter your Message"
+            id="message"
             required
           ></textarea>
         </div>
@@ -112,5 +116,20 @@
     </div>
   </div>
 </template>
+
+<script setup>
+function sendEmail() {
+  const name = document.getElementById('name').value
+  const email = document.getElementById('email').value
+  const message = document.getElementById('message').value
+
+  const fullMessage = {
+    name: name,
+    email: email,
+    message: message
+  }
+  console.log(fullMessage)
+}
+</script>
 
 <style scoped></style>
