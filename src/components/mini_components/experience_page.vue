@@ -2,45 +2,32 @@ h1
 <template>
   <div class="wrapper px-2 py-10">
     <div class="flex justify-center mb-5">
-      <h3
-        class="text-xl sm:text-3xl md:text-5xl font-bold underline decoration-wavy uppercase text-primary"
-      >
+      <h3 class="text-xl sm:text-3xl md:text-5xl font-bold underline decoration-wavy uppercase text-primary">
         Experience
       </h3>
     </div>
     <div class="flex justify-center w-full flex-wrap gap-2 sm:gap-5">
-      <div
-        v-for="(item, index) in experiences"
-        :key="index"
-        class="border-2 bg-white border-gray-200 border-opacity-60 rounded-xl p-5 lg:p-10 m-2 flex justify-between items-center gap-5 md:flex-col w-full md:w-[40%] lg:w-[30%] hover:shadow-2xl shadow-normal"
-      >
+      <div v-for="(item, index) in experiences" :key="index"
+        class="border-2 bg-white border-gray-200 border-opacity-60 rounded-xl p-5 lg:p-10 m-2 flex justify-between items-center gap-5 md:flex-col w-full md:w-[40%] lg:w-[30%] hover:shadow-2xl shadow-normal">
         <div class="w-1/2 md:w-full flex justify-center items-center flex-col gap-3">
-          <img
-            class="w-full object-contain object-center size-[125px] sm:size-[150px] md:size-[200px]"
-            :src="item.image"
-            :alt="item.college + ' icon'"
-          />
+          <img class="w-full object-contain object-center size-[125px] sm:size-[150px] md:size-[200px]"
+            :src="item.image" :alt="item.college + ' icon'" />
         </div>
         <div class="w-1/2 md:w-full flex justify-center items-center text-center flex-col gap-3">
           <h1 class="text-xl sm:text-2xl font-bold text-secondary w-full">{{ item.college }}</h1>
           <h1 class="text-xl sm:text-2xl font-medium md:max-w-[220px]">{{ item.position }}</h1>
-          <button
-            type="button"
+          <button type="button"
             class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal hover:bg-secondary hover:text-white"
-            @click="openPopup(item)"
-          >
+            @click="openPopup(item)">
             Read More
           </button>
         </div>
       </div>
     </div>
-    <div
-      v-if="showDialog"
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
-    >
+    <div v-if="showDialog" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div class="bg-white p-5 rounded max-w-lg w-full border-2 border-primary-light">
         <h2 class="text-2xl font-bold mb-4">{{ selectedExperience.college }}</h2>
-        <p class="text-lg mb-4">{{ selectedExperience.description }}</p>
+        <p class="text-lg mb-4" v-html="selectedExperience.description"></p>
         <button @click="closePopup" class="text-white bg-primary px-4 py-2 rounded">Close</button>
       </div>
     </div>
@@ -55,19 +42,37 @@ const experiences = [
     college: 'County College of Morris',
     position: 'Software Dev. & IT, Intern',
     image: '/image/college.png',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, facilis?'
+    description: ` <ul>
+  <li>Automated business processes by developing dynamic macros in <strong> VBA & Python </strong> , increasing productivity by 50%</li>
+  <li>Provided <strong> technical support and troubleshooting</strong> for both hardware and software issues across the college</li>
+  <li>Helped in the setup, configuration, and maintenance of servers, workstations, and other IT equipment</li>
+  <li>Assisted in the deployment, configuration, and maintenance of enterprise software applications. Ensured software was up-to-date and compatible with existing systems</li>
+</ul>`
   },
   {
     college: 'Country College of Morris',
-    position: 'Software Dev. & IT, Intern',
+    position: 'Data Analyst and Research, intern',
     image: '/image/college.png',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, facilis?'
+    description: `<ul>
+    <li>Maintains, cleans, and updates <strong> Microsoft  Excel </strong> database of student enrollment in continuing education certifications.</li>
+    <li>Leveraged <strong> Python </strong>  to manipulate, explore, clean analyze and report data on student enrollment.</li>
+    <li>Develop <strong> Tableau </strong> dashboards visualizing net spend, conducting enrollment analysis and creating key insights.</li>
+    <li>Assists staff on research projects, information gathering, automating processes, and provides occasional IT solutions</li>
+      </ul> 
+    
+    `
   },
   {
     college: 'LetsPlott Incorporated',
     position: 'Social Media Analyst',
     image: '/image/plott.png',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, facilis?'
+    description: `<ul>
+    <li>Implement and monitor A/B tests for website, app, and social media pages, using relevant tools and platforms (e.g., <strong> Google Analytics, Facebook Ads Manager </strong> ), which increased e-commerce sales growth of 20% for 3 quarters. </li>
+    <li>Directed all content and strategy on TikTok, YouTube Instagram, and Facebook; Instagram engagement increased by <strong> 50% over 6 months </strong>, 35 million global impressions combined. </li>
+    <li>Developed and implemented a social media strategy that increased followers on Instagram by <strong> 30% in 3 months </strong> and engagement by 50% in 6 months. </li>
+    <li>Best in App honoree at CES 2022 for our newest advancements in XR and AR within our App, assisted in Awards submission, in-app testing, taking photos, coordinating slides, and more </li>
+    </ul> 
+    `
   }
 ]
 
