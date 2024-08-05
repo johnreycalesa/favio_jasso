@@ -43,10 +43,10 @@ const experiences = [
     position: 'Software Dev. & IT, Intern',
     image: '/image/college.png',
     description: ` <ul class="ml-3 list-disc">
-  <li>Automated business processes by developing dynamic macros in <strong> VBA & Python </strong> , increasing productivity by 50%</li>
-  <li>Provided <strong> technical support and troubleshooting</strong> for both hardware and software issues across the college</li>
-  <li>Helped in the setup, configuration, and maintenance of servers, workstations, and other IT equipment</li>
-  <li>Assisted in the deployment, configuration, and maintenance of enterprise software applications. Ensured software was up-to-date and compatible with existing systems</li>
+  <li>Automated business processes by developing dynamic macros in <strong> VBA & Python </strong> , increasing productivity by 50%.</li>
+  <li>Provided <strong> technical support and troubleshooting</strong> for both hardware and software issues across the college.</li>
+  <li>Helped in the setup, configuration, and maintenance of servers, workstations, and other IT equipment.</li>
+  <li>Assisted in the deployment, configuration, and maintenance of enterprise software applications. Ensured software was up-to-date and compatible with existing systems.</li>
 </ul>`
   },
   {
@@ -57,9 +57,8 @@ const experiences = [
     <li>Maintains, cleans, and updates <strong> Microsoft  Excel </strong> database of student enrollment in continuing education certifications.</li>
     <li>Leveraged <strong> Python </strong>  to manipulate, explore, clean analyze and report data on student enrollment.</li>
     <li>Develop <strong> Tableau </strong> dashboards visualizing net spend, conducting enrollment analysis and creating key insights.</li>
-    <li>Assists staff on research projects, information gathering, automating processes, and provides occasional IT solutions</li>
+    <li>Assists staff on research projects, information gathering, automating processes, and provides occasional IT solutions.</li>
       </ul> 
-    
     `
   },
   {
@@ -70,7 +69,7 @@ const experiences = [
     <li>Implement and monitor A/B tests for website, app, and social media pages, using relevant tools and platforms (e.g., <strong> Google Analytics, Facebook Ads Manager </strong> ), which increased e-commerce sales growth of 20% for 3 quarters. </li>
     <li>Directed all content and strategy on TikTok, YouTube Instagram, and Facebook; Instagram engagement increased by <strong> 50% over 6 months </strong>, 35 million global impressions combined. </li>
     <li>Developed and implemented a social media strategy that increased followers on Instagram by <strong> 30% in 3 months </strong> and engagement by 50% in 6 months. </li>
-    <li>Best in App honoree at CES 2022 for our newest advancements in XR and AR within our App, assisted in Awards submission, in-app testing, taking photos, coordinating slides, and more </li>
+    <li>Best in App honoree at CES 2022 for our newest advancements in XR and AR within our App, assisted in Awards submission, in-app testing, taking photos, coordinating slides, and more. </li>
     </ul> 
     `
   }
