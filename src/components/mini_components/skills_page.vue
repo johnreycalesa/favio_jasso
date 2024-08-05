@@ -1,16 +1,23 @@
 <template>
   <div class="wrapper px-12">
-    <div class="flex justify-center mb-12">
-      <h3 class="text-xl sm:text-3xl md:text-5xl font-bold underline decoration-wavy uppercase text-primary">
-        Skills
-      </h3>
+    <div class="flex items-center text-center py-5 mb-10 px-10">
+      <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
+      <h3 class="px-10 text-xl sm:text-3xl md:text-5xl font-bold uppercase text-primary">Skills</h3>
+      <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
     </div>
     <div class="flex justify-around items-center w-full flex-wrap gap-2 sm:gap-10">
       <div
         class="relative size-[100px] bg-white sm:size-[150px] md:size-[200px] border-2 border-opacity-60 rounded-lg flex justify-around items-center p-2 sm:p-5 hover:scale-105 hover:shadow-normal flex"
-        v-for="(item, index) in icons" :key="index" :style="`border-color: ${item.color}`"
-        :class="`${item.hoverColor}`">
-        <img class="size-[150px] w-full object-contain object-center" :src="item.url" :alt="item.name + ' icon'" />
+        v-for="(item, index) in icons"
+        :key="index"
+        :style="`border-color: ${item.color}`"
+        :class="`${item.hoverColor}`"
+      >
+        <img
+          class="size-[150px] w-full object-contain object-center"
+          :src="item.url"
+          :alt="item.name + ' icon'"
+        />
         <!-- <div
           class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-25 text-white text-lg font-bold opacity-0 hover:opacity-100 transition-opacity duration-300">
           {{ item.name }}

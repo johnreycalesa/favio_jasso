@@ -1,10 +1,12 @@
 h1
 <template>
   <div class="wrapper px-0 md:px-2 py-10">
-    <div class="flex justify-center mb-5">
-      <h3 class="text-xl sm:text-3xl md:text-5xl font-bold underline decoration-wavy uppercase text-primary">
+    <div class="flex items-center text-center py-5 mb-10 px-10">
+      <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
+      <h3 class="px-10 text-xl sm:text-3xl md:text-5xl font-bold uppercase text-primary">
         Experience
       </h3>
+      <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
     </div>
     <div class="flex justify-center w-full flex-wrap gap-2 sm:gap-5">
       <div v-for="(item, index) in experiences" :key="index"
@@ -26,10 +28,10 @@ h1
     </div>
     <div v-if="showDialog" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div class="bg-white p-5 rounded max-w-4xl w-full border-2 border-primary-light">
-        <h2 class="text-2xl font-bold mb-4">{{ selectedExperience.college }}</h2>
+        <h2 class="text-2xl font-bold mb-4 text-primary">{{ selectedExperience.college }}</h2>
         <p class="text-sm md:text-lg mb-4" v-html="selectedExperience.description"></p>
         <div class="flex justify-end items-center w-full">
-          <button @click="closePopup" class="text-white bg-primary px-4 py-2 rounded">Close</button>
+          <button @click="closePopup" class="text-white bg-primary px-4 py-2 rounded hover:opacity-80">Close</button>
         </div>
       </div>
     </div>

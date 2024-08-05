@@ -4,7 +4,8 @@
       <div class="w-full sm:w-1/2 flex flex-col gap-3 p-2 sm:p-5">
         <div>
           <h1 class="text-2xl md:text-4xl font-black text-secondary tracking-widest">Hi! I'm</h1>
-          <h1 class="text-2xl md:text-4xl font-black text-secondary tracking-widest animate-pulse">
+          <h1
+            class="text-2xl md:text-4xl font-black text-primary tracking-widest animate-pulse decoration-2  underline decoration-wavy underline-offset-4">
             Favio Valentino Jasso
           </h1>
         </div>
@@ -16,21 +17,16 @@
           </p>
         </div>
         <div>
-          <button
-            type="button"
-            class="rounded border-2 border-secondary p-2 sm:p-3 hover:bg-primary hover:text-white hover:animate-pulse transition-all shadow-normal"
-          >
+          <button type="button"
+            class="rounded border-2 border-secondary p-2 sm:p-3 hover:bg-primary hover:text-white hover:animate-pulse transition-all shadow-normal">
             Get Started
           </button>
         </div>
       </div>
       <div class="w-[80%] sm:w-1/2 flex justify-center items-center p-2 mt-32 sm:p-5">
-        <img
-          src="/image/favio.png"
-          alt="Favio Valentino Jasso - Computer Science Student and Software Developer"
-          class="w-full sm:w-[300px] lg:w-[550px] object-cover rounded-bl-[100px] md:rounded-bl-[250px] rounded-tl-xl rounded-br-xl rounded-tr-xl transition-all delay-75 shadow-normal"
-          id="box"
-        />
+        <img src="/image/favio.png" alt="Favio Valentino Jasso - Computer Science Student and Software Developer"
+          class="w-full sm:w-[300px] lg:w-[550px] object-cover rounded-bl-[100px] md:rounded-bl-[250px] rounded-tl-xl rounded-br-xl rounded-tr-xl transition-all delay-100 shadow-normal"
+          id="box" />
       </div>
     </div>
   </div>
