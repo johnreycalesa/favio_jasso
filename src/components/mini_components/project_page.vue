@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper px-0 md:px-2 py-10">
-    <div class="flex items-center text-center py-5 mb-10 px-10">
+    <div class="flex items-center text-center py-5 mb-10 px-2 md:px-10">
       <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
       <h3 class="px-10 text-xl sm:text-3xl md:text-5xl font-bold uppercase text-primary">
         Projects

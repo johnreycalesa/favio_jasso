@@ -1,5 +1,4 @@
 <script setup>
-import Landing from './mini_components/landing_page.vue'
 import Skills from './mini_components/skills_page.vue'
 import Experience from './mini_components/experience_page.vue'
 import Project from './mini_components/project_page.vue'
@@ -148,8 +147,48 @@ const toggleNav = () => {
       </nav>
     </header>
   </div>
+  <div
+    class="flex justify-center items-center w-full h-full sm:h-[850px] p-2 sm:p-12 wrapper"
+    id="home"
+  >
+    <div class="flex justify-around items-center w-full flex-col-reverse sm:flex-row">
+      <div class="w-full sm:w-1/2 flex flex-col gap-5 p-2 sm:p-5">
+        <div>
+          <h1 class="text-2xl md:text-4xl font-black text-secondary tracking-widest">Hi! I'm</h1>
+          <h1
+            class="text-2xl md:text-4xl font-black text-primary tracking-widest animate-pulse decoration-2 underline decoration-wavy underline-offset-4"
+          >
+            Favio Jasso
+          </h1>
+        </div>
+        <div>
+          <p class="text-base md:text-xl">
+            I am a current Computer Science student at the County College of Morris. My previous
+            work experiences are in strategic marketing and analytics. I am currently working in
+            Software Development and Data Analysis.
+          </p>
+        </div>
+        <div>
+          <a
+            type="button"
+            class="rounded border-2 border-secondary p-2 sm:p-3 hover:bg-primary hover:text-white hover:animate-pulse transition-all shadow-normal"
+            href="#contact"
+          >
+            Let's Connect
+          </a>
+        </div>
+      </div>
+      <div class="w-[80%] sm:w-1/2 flex justify-center items-center p-2 mt-32 sm:p-5">
+        <img
+          src="/image/favio.png"
+          alt="Favio Jasso - Computer Science Student and Software Developer"
+          class="w-full sm:w-[300px] lg:w-[550px] object-cover rounded-bl-[100px] md:rounded-bl-[250px] rounded-tl-xl rounded-br-xl rounded-tr-xl transition-all delay-100 shadow-normal"
+          id="box"
+        />
+      </div>
+    </div>
+  </div>
   <div class="flex flex-col justify-center items-center">
-    <Landing id="home" />
     <Skills id="skills" />
     <Experience id="experience" />
     <Project id="projects" />
@@ -157,4 +196,22 @@ const toggleNav = () => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width: 767px) {
+  #box {
+    box-shadow:
+      -25px 25px #ffd09b,
+      25px -25px #ff9500;
+    border-radius: 10px 10px 10px 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #box:hover {
+    box-shadow:
+      -25px 25px #ffd09b,
+      25px -25px #ff9500;
+    border-radius: 10px 10px 10px 250px;
+  }
+}
+</style>

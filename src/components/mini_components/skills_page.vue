@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper px-12">
-    <div class="flex items-center text-center py-5 mb-10 px-10">
+  <div class="wrapper px-0 md:px-12">
+    <div class="flex items-center text-center py-5 mb-10 px-2 md:px-10">
       <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
       <h3 class="px-10 text-xl sm:text-3xl md:text-5xl font-bold uppercase text-primary">Skills</h3>
       <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
@@ -22,7 +22,7 @@
         />
         <div
           v-if="showDialog && currentSkill === item.name"
-          class="absolute inset-x-0 -top-16 flex items-center justify-center text-white text-xs sm:text-sm text-center md:text-2xl font-bold transition-opacity duration-300 rounded-xl shadow-normal p-2"
+          class="absolute inset-x-0 -top-10 sm:-top-12 md:-top-16 flex items-center justify-center text-white text-xs sm:text-sm text-center md:text-2xl font-bold transition-opacity duration-300 rounded-xl shadow-normal p-2"
           :class="`${item.skillsNameBackground}`"
           id="skillName"
         >

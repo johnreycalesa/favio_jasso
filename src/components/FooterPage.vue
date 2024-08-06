@@ -3,7 +3,7 @@
 <template>
   <div class="wrapper pt-2 md:pt-10">
     <div
-      class="p-0 md:px-5 flex h-auto flex-col md:flex-row justify-around py-2 sm:py-10 lg:py-24 bg-tertiary-light text-white xl:rounded-t-lg"
+      class="p-0 md:px-5 flex h-auto flex-col md:flex-row justify-around py-2 sm:py-10 lg:py-24 bg-[#FFA640] text-white xl:rounded-t-lg"
     >
       <form
         class="flex flex-col w-full md:max-w-[675px] h-full md:max-h-[587px] gap-3 p-5 md:p-14 md:bg-white rounded-lg"
@@ -55,7 +55,7 @@
         </div>
         <div class="flex flex-col gap-3">
           <button
-            class="uppercase text-sm font-bold tracking-wide bg-orange-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-orange-700"
+            class="uppercase text-sm font-bold tracking-wide bg-primary text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-orange-700"
             type="submit"
           >
             Send Message
