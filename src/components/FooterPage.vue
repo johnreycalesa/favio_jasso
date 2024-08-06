@@ -3,18 +3,18 @@
 <template>
   <div class="wrapper pt-2 md:pt-10">
     <div
-      class="p-0 md:px-5 flex h-auto flex-row justify-around py-2 sm:py-10 lg:py-24 bg-tertiary-light text-white xl:rounded-t-lg"
+      class="p-0 md:px-5 flex h-auto flex-col md:flex-row justify-around py-2 sm:py-10 lg:py-24 bg-tertiary-light text-white xl:rounded-t-lg"
     >
       <form
-        class="flex flex-col w-full md:max-w-[675px] h-full md:max-h-[587px] gap-3 p-5 md:p-14 sm:bg-white rounded-lg"
+        class="flex flex-col w-full md:max-w-[675px] h-full md:max-h-[587px] gap-3 p-5 md:p-14 md:bg-white rounded-lg"
         @submit.prevent="sendEmail"
       >
-        <div class="text-2xl md:text-4xl font-bold text-white sm:text-primary">
+        <div class="text-2xl md:text-4xl font-bold text-white md:text-primary">
           Connect with me!
         </div>
         <div class="flex flex-col gap-3">
           <span
-            class="text-sm md:text-2xl text-white sm:text-primary font-bold uppercase md:capitalize"
+            class="text-sm md:text-2xl text-white md:text-primary font-bold uppercase md:capitalize"
           >
             Full Name
           </span>
@@ -28,7 +28,7 @@
         </div>
         <div class="flex flex-col gap-3">
           <span
-            class="uppercase md:capitalize text-sm md:text-2xl text-white sm:text-primary font-bold"
+            class="uppercase md:capitalize text-sm md:text-2xl text-white md:text-primary font-bold"
           >
             Email
           </span>
@@ -42,7 +42,7 @@
         </div>
         <div class="flex flex-col gap-3">
           <span
-            class="uppercase md:capitalize text-sm md:text-2xl text-white sm:text-primary font-bold"
+            class="uppercase md:capitalize text-sm md:text-2xl text-white md:text-primary font-bold"
           >
             Message
           </span>
@@ -62,8 +62,8 @@
           </button>
         </div>
       </form>
-      <div class="hidden md:flex flex-col justify-center md:w-1/2 md:pl-14 pr-5 py-5 gap-8">
-        <div class="flex justify-end gap-3">
+      <div class="flex flex-col justify-center md:w-1/2 md:pl-14 md:pr-5 py-5 gap-8">
+        <div class="flex justify-center md:justify-end gap-3">
           <!-- linkedIn icon -->
           <a href="https://www.linkedin.com/in/faviojasso/" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="size-8">
@@ -105,10 +105,10 @@
             </svg>
           </a>
         </div>
-        <p class="italic md:text-lg lg:text-2xl font-bold text-right">
+        <p class="hidden md:block italic md:text-lg lg:text-2xl font-bold text-right">
           "Empowering your digital future with cutting-edge technology and strategic insights."
         </p>
-        <p class="md:text-lg lg:text-xl text-right">
+        <p class="text-sm md:text-lg lg:text-xl text-center md:text-right">
           © <span class="font-bold italic">Favio Valentino Jasso.</span> All rights reserved.
         </p>
       </div>
