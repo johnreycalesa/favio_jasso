@@ -109,7 +109,7 @@
           "Empowering your digital future with cutting-edge technology and strategic insights."
         </p>
         <p class="text-sm md:text-lg lg:text-xl text-center md:text-right">
-          © <span class="font-bold italic">Favio Valentino Jasso.</span> All rights reserved.
+          © <span class="font-bold italic">Favio Jasso.</span> All rights reserved.
         </p>
       </div>
     </div>
