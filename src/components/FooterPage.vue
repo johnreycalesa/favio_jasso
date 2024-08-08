@@ -121,11 +121,14 @@
 
 <script setup>
 import { ref } from 'vue'
-import axios from 'axios'
+import emailjs from 'emailjs-com'
 
 const name = ref('')
 const email = ref('')
 const message = ref('')
+const serviceID = 'service_wctmbgh'
+const templateID = 'template_2xgtcqw'
+const userID = 'nKYHmb69A350_7kwn'
 function sendEmail() {
   const fullMessage = {
     name: name.value,
@@ -134,13 +137,13 @@ function sendEmail() {
   }
   console.log(fullMessage)
 
-  axios
-    .post('http://localhost/codeigniter4/public/send')
+  emailjs
+    .send(serviceID, templateID, fullMessage, userID)
     .then((response) => {
-      console.log(response)
+      console.log('SUCCESS!', response.status, response.text)
     })
-    .catch((error) => {
-      console.log(error)
+    .catch((err) => {
+      console.log('FAILED...', err)
     })
 }
 </script>
