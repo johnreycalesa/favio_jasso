@@ -91,6 +91,7 @@
 <script setup>
 import { ref } from 'vue'
 import emailjs from 'emailjs-com'
+// import axios from 'axios'
 import { useToast } from 'vue-toast-notification'
 const toast = useToast()
 
@@ -122,7 +123,19 @@ function sendEmail() {
         type: 'error'
       })
     })
+    // axios.post('/send_mail.php', fullMessage).then(() => {
+    //   toast.open({
+    //     message: 'Email sent successfully!',
+    //     type: 'success'
+    //   })
+    // }).catch(() => {
+    //   toast.open({
+    //     message: 'Something went wrong. Please try again.',
+    //     type: 'error'
+    //   })
+    // }) 
 }
+
 </script>
 
 <style scoped></style>
