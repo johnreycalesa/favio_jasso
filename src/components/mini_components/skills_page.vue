@@ -5,15 +5,27 @@
       <h3 class="px-10 text-xl sm:text-3xl md:text-5xl font-bold uppercase text-primary">Skills</h3>
       <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
     </div>
-    <div class="flex justify-around items-center w-full flex-wrap gap-2 sm:gap-10">
+    <div class="flex justify-around items-center w-full flex-wrap gap-2 p-5 sm:gap-10">
       <div
         class="relative size-[100px] bg-white sm:size-[150px] md:size-[200px] border-2 border-opacity-60 rounded-lg flex justify-around items-center p-2 sm:p-5 hover:scale-105 hover:shadow-normal flex"
-        v-for="(item, index) in icons" :key="index" :style="`border-color: ${item.color}`" :class="`${item.hoverColor}`"
-        @mouseover="showSkillName(item.name)" @mouseleave="hideSkillName">
-        <img class="size-[150px] w-full object-contain object-center" :src="item.url" :alt="item.name + ' icon'" />
-        <div v-if="showDialog && currentSkill === item.name"
+        v-for="(item, index) in icons"
+        :key="index"
+        :style="`border-color: ${item.color}`"
+        :class="`${item.hoverColor}`"
+        @mouseover="showSkillName(item.name)"
+        @mouseleave="hideSkillName"
+      >
+        <img
+          class="size-[150px] w-full object-contain object-center"
+          :src="item.url"
+          :alt="item.name + ' icon'"
+        />
+        <div
+          v-if="showDialog && currentSkill === item.name"
           class="absolute inset-x-0 -top-10 sm:-top-12 md:-top-16 flex items-center justify-center text-white text-xs sm:text-sm text-center md:text-2xl font-bold transition-opacity duration-300 rounded-xl shadow-normal p-2"
-          :class="`${item.skillsNameBackground}`" id="skillName">
+          :class="`${item.skillsNameBackground}`"
+          id="skillName"
+        >
           {{ item.name }}
         </div>
       </div>

@@ -19,11 +19,21 @@ class EmailController extends CI_Controller
 
 	public function send()
 	{
-		$postData = json_decode($this->input->post('data'));
-		if (!$postData) {
+		$postDataRaw = $this->input->post('data');
+		if (!$postDataRaw) {
 			$response = array(
 				'status' => false,
-				'message' => 'Invalid data format'
+				'message' => 'No data received'
+			);
+			echo json_encode($response);
+			return;
+		}
+
+		$postData = json_decode($postDataRaw);
+		if (json_last_error() !== JSON_ERROR_NONE) {
+			$response = array(
+				'status' => false,
+				'message' => 'Invalid JSON data format'
 			);
 			echo json_encode($response);
 			return;
