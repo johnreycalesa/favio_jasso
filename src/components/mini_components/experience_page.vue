@@ -69,8 +69,8 @@ const experiences = [
 </ul>`
   },
   {
-    college: 'Country College of Morris',
-    position: 'Data Analyst and Research, intern',
+    college: 'County College of Morris',
+    position: 'Data Analyst and Research, Intern',
     image: '/image/college.png',
     description: `<ul class="ml-3 list-disc">
     <li>Maintains, cleans, and updates <strong> Microsoft  Excel </strong> database of student enrollment in continuing education certifications.</li>
