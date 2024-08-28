@@ -1,5 +1,11 @@
 # FavioJasso
 
+Authored & Designed by : John Rey Calesa & Favio Jasso
+
+<h2>Tech Stack</h2>
+
+This was made in the Vue.Js framework. Styled using TailwindCSS.
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
