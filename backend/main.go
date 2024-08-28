@@ -66,6 +66,7 @@ func main() {
 		fmt.Fprintf(w, "Email sent successfully!")
 	})
 	//error handling
+
 	http.HandleFunc("/test", func(w http.ResponseWriter, r *http.Request) {
 		if r.Method != http.MethodGet {
 			http.Error(w, "Invalid request method", http.StatusMethodNotAllowed)
