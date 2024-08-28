@@ -21,7 +21,7 @@ func sendEmail(to, subject, body string) error {
 	auth := smtp.PlainAuth(
 		"",
 		os.Getenv("EMAIL_ADDRESS"),  // Use environment variable
-		os.Getenv("EMAIL_PASSWORD"),  // Use environment variable
+		os.Getenv("EMAIL_PASSWORD"), // Use environment variable
 		"smtp.gmail.com",
 	)
 
@@ -65,15 +65,15 @@ func main() {
 
 		fmt.Fprintf(w, "Email sent successfully!")
 	})
-    
-    http.HandleFunc("/test", func(w http.ResponseWriter, r *http.Request) {
-        if r.Method != http.MethodGet {
-            http.Error(w, "Invalid request method", http.StatusMethodNotAllowed)
-            return
-        }
-        fmt.Fprintf(w, "Hello, World!")
-    })
-    
+	//error handling
+	http.HandleFunc("/test", func(w http.ResponseWriter, r *http.Request) {
+		if r.Method != http.MethodGet {
+			http.Error(w, "Invalid request method", http.StatusMethodNotAllowed)
+			return
+		}
+		fmt.Fprintf(w, "Hello, World!")
+	})
+
 	// Add CORS headers
 	http.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
