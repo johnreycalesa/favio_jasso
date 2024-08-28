@@ -1,7 +1,6 @@
-h1
 <template>
-  <div class="wrapper px-0 md:px-2 py-10">
-    <div class="flex items-center text-center py-5 mb-10 px-2 md:px-10">
+  <div class="wrapper px-0 md:px-2 py-5 md:py-10">
+    <div class="flex items-center text-center py-5 mb-2 md:mb-10 px-2 md:px-10">
       <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
       <h3 class="px-10 text-xl sm:text-3xl md:text-5xl font-bold uppercase text-primary">
         Experience
@@ -23,7 +22,7 @@ h1
         </div>
         <div class="w-1/2 md:w-full flex justify-center items-center text-center flex-col gap-3">
           <h1 class="text-xl sm:text-2xl font-bold text-secondary w-full">{{ item.college }}</h1>
-          <h1 class="text-base sm:text-2xl font-medium md:max-w-[220px]">{{ item.position }}</h1>
+          <h1 class="text-lg font-medium md:max-w-[220px]">{{ item.position }}</h1>
           <button
             type="button"
             class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal hover:bg-secondary hover:text-white"
@@ -70,8 +69,8 @@ const experiences = [
 </ul>`
   },
   {
-    college: 'Country College of Morris',
-    position: 'Data Analyst and Research, intern',
+    college: 'County College of Morris',
+    position: 'Data Analyst and Research, Intern',
     image: '/image/college.png',
     description: `<ul class="ml-3 list-disc">
     <li>Maintains, cleans, and updates <strong> Microsoft  Excel </strong> database of student enrollment in continuing education certifications.</li>

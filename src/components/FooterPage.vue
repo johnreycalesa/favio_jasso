@@ -20,9 +20,9 @@
           </span>
           <input
             class="w-full bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2"
+            v-model="name"
             type="text"
             placeholder="Enter your Name"
-            id="name"
             required
           />
         </div>
@@ -34,9 +34,9 @@
           </span>
           <input
             class="w-full bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 border-2 focus:ring-orange-400"
+            v-model="email"
             type="email"
             placeholder="Enter your email address"
-            id="email"
             required
           />
         </div>
@@ -48,8 +48,8 @@
           </span>
           <textarea
             class="w-full h-32 bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2 resize-none scrollbar"
+            v-model="message"
             placeholder="Enter your Message"
-            id="message"
             required
           ></textarea>
         </div>
@@ -117,17 +117,55 @@
 </template>
 
 <script setup>
-function sendEmail() {
-  const name = document.getElementById('name').value
-  const email = document.getElementById('email').value
-  const message = document.getElementById('message').value
+import { ref } from 'vue'
+import emailjs from 'emailjs-com'
+// import axios from 'axios'
+import { useToast } from 'vue-toast-notification'
+const toast = useToast()
 
+const name = ref('')
+const email = ref('')
+const message = ref('')
+const serviceID = 'service_wctmbgh'
+const templateID = 'template_2xgtcqw'
+const userID = 'nKYHmb69A350_7kwn'
+function sendEmail() {
   const fullMessage = {
-    name: name,
-    email: email,
-    message: message
+    name: name.value,
+    email: email.value,
+    message: message.value
   }
+
   console.log(fullMessage)
+
+  emailjs
+    .send(serviceID, templateID, fullMessage, userID)
+    .then(() => {
+      toast.open({
+        message: 'Email sent successfully!',
+        type: 'success'
+      })
+    })
+    .catch(() => {
+      toast.open({
+        message: 'Something went wrong. Please try again.',
+        type: 'error'
+      })
+    })
+  // axios
+  //   .post('https://www.faviojasso.com/codeigniter4/public/send', fullMessage)
+  //   .then(() => {
+  //     toast.open({
+  //       message: 'Email sent successfully!',
+  //       type: 'success'
+  //     })
+  //   })
+  //   .catch(() => {
+  //     toast.open({
+  //       message: 'Something went wrong. Please try again.',
+  //       type: 'error'
+  //     })
+  //   })
 }
 </script>
 

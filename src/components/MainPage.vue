@@ -15,9 +15,7 @@ const toggleNav = () => {
 
 <template>
   <div class="bg-tertiary w-full p-2 sm:p-5 fixed top-0 h-min shadow-md z-50">
-    <header
-      class="container mx-auto flex w-full items-center relative justify-between py-4 px-2 sm:px-6"
-    >
+    <header class="flex w-full items-center relative justify-between py-4 px-2 sm:px-6">
       <a href="#home">
         <div class="w-full text-center text-xl sm:text-4xl font-bold sm:w-fit sm:text-left">
           <span class="text-orange-950 font-bold">FAVIO JASSO</span>
@@ -148,7 +146,7 @@ const toggleNav = () => {
     </header>
   </div>
   <div
-    class="flex justify-center items-center w-full h-full sm:h-[850px] p-2 sm:p-12 wrapper"
+    class="flex justify-center items-center w-full h-full sm:h-[850px] p-2 md:p-5 lg:p-12 wrapper"
     id="home"
   >
     <div class="flex justify-around items-center w-full flex-col-reverse sm:flex-row">

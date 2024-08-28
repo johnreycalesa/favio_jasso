@@ -1,11 +1,11 @@
 <template>
-  <div class="wrapper px-0 md:px-12">
-    <div class="flex items-center text-center py-5 mb-10 px-2 md:px-10">
+  <div class="wrapper px-0 md:px-2 py-5 md:py-10">
+    <div class="flex items-center text-center py-5 mb-2 md:mb-10 px-2 md:px-10">
       <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
       <h3 class="px-10 text-xl sm:text-3xl md:text-5xl font-bold uppercase text-primary">Skills</h3>
       <div class="flex-grow h-1 bg-[#ff9000] rounded-xl"></div>
     </div>
-    <div class="flex justify-around items-center w-full flex-wrap gap-2 sm:gap-10">
+    <div class="flex justify-around items-center w-full flex-wrap gap-2 p-5 sm:gap-10">
       <div
         class="relative size-[100px] bg-white sm:size-[150px] md:size-[200px] border-2 border-opacity-60 rounded-lg flex justify-around items-center p-2 sm:p-5 hover:scale-105 hover:shadow-normal flex"
         v-for="(item, index) in icons"
