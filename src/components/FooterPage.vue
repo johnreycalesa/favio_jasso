@@ -47,7 +47,7 @@
             Message
           </span>
           <textarea
-            class="w-full h-32 bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2 resize-none scrollbar"
+            class="w-full h-32 bg-white text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-orange-400 border-2 resize-1none scrollbar"
             v-model="message"
             placeholder="Enter your Message"
             required
@@ -66,7 +66,7 @@
         <div class="flex justify-center md:justify-end gap-3">
           <!-- linkedIn icon -->
           <a href="https://www.linkedin.com/in/faviojasso/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="size-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="size-12">
               <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
               <path
                 fill="#ffffff"
@@ -76,7 +76,7 @@
           </a>
           <!-- phone icon -->
           <a href="tel:+9732342073">
-            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 384 512">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-12" viewBox="0 0 384 512">
               <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
               <path
                 fill="#ffffff"
@@ -86,7 +86,7 @@
           </a>
           <!-- email icon -->
           <a href="mailto:jasso.favio@student.ccm.edu">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-12">
               <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
               <path
                 fill="#ffffff"
@@ -96,7 +96,7 @@
           </a>
           <!-- github icon -->
           <a href="https://github.com/FavioJasso" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="size-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="size-12">
               <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
               <path
                 fill="#ffffff"

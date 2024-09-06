@@ -28,18 +28,19 @@
             <div>{{ items.description }}</div>
           </h1>
           <div class="w-full flex flex-col xl:flex-row gap-3">
-            <button
+            <a
+              :href="items.link"
+              target="_blank"
               class="text-sm sm:text-xl w-full text-secondary border-2 bg-[#fff5ee] border-secondary p-2 rounded border-radius shadow-normal hover:bg-secondary hover:text-white"
             >
-              <a :href="items.link" target="_blank">
-                {{ items.button }}
-              </a>
-            </button>
-            <button
+              {{ items.button }}
+            </a>
+            <a
+              :href="items.videoLink"
+              target="_blank"
               class="text-sm sm:text-xl text-secondary border-2 bg-[#fff5ee] border-secondary p-2 w-full rounded border-radius shadow-normal hover:bg-secondary hover:text-white"
+              >Video</a
             >
-              <a :href="items.videoLink" target="_blank">Video</a>
-            </button>
           </div>
         </div>
       </div>
@@ -61,7 +62,7 @@ const experiences = [
     position: 'Analyst & Team Captain',
     image: '/image/asa.png',
     description:
-      "I was the Team Captain for County College of Morris's Data Science team in ASA Data Fest 2024, analyzing over 3 million data points to find insights for CourseKata, a Data Science and Statistics platform.",
+      'Representing County College of Morris, my team and I won Best Statistical Analysis in A.S.A. Data Fest 2024. Analyzing over 3 million data points and demonstrating high level topics in Data Science.',
     button: 'Presentation',
     link: 'https://drive.google.com/file/d/1pu0Z-T2j5GHh1wjnm0cjQdD2ENWWBx1o/view',
     videoLink: 'https://youtu.be/G3K2Pz4gKl0?si=VYJFETQ8ZBMEP0eU'
