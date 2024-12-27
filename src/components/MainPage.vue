@@ -182,9 +182,9 @@ onMounted(() => {
         </div>
         <div>
           <p class="text-base md:text-xl">
-            I am a Data Analytics student at the County College of Morris with a strong background
-            in Software Development. Currently, I work as an Associate Data Analyst at Transparent
-            Energy, focusing on Database Management and Automation.
+            I am a Technology student at the County College of Morris with a strong background in
+            Software Development. Currently, I work as an Junior Data Engineer at Transparent
+            Energy, focusing on ETL processes and Automation.
           </p>
         </div>
         <div>
