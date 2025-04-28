@@ -61,25 +61,36 @@ import { ref, onMounted } from 'vue'
 
 const experiences = [
   {
+    college: 'Transparent Energy',
+    position: 'Jr. Data Engineer',
+    image: '/image/transparent.svg',
+    description: `<ul class="ml-3 list-disc">
+    <li>Develop <b>Python</b>-based data processing tools, automating workflows for cross-functional teams, reducing processing time by <b>~8 hours/week per team member and $100,000+ in time saved</b>.</li>
+    <li>Architect ETL pipelines & scripts (<b>Apache Airflow, Python</b>) to extract, transform, and load unstructured data (CSV, XLSX, PDF) into <b>MariaDB</b>, while extracting over <b>1,250,000+ data points</b>.</li>
+    <li>Implement <b>Large Language Models</b> (e.g., OpenAI, Gemini, DeepSeek) to develop AI-Agents enabling file parsing, summaries, and excel functions.</li>
+    <li>Assist analysts in Ad-Hoc financial, pricing, and marketing reports, leveraging <b>SQL</b> to compile important KPI metrics for C-Suite executives.</li>
+  </ul>`
+  },
+  {
     college: 'County College of Morris',
     position: 'Software Dev. & IT, Intern',
     image: '/image/college.png',
-    description: ` <ul class="ml-3 list-disc">
-  <li>Automated business processes by developing dynamic macros in <strong> VBA & Python </strong> , increasing productivity by 50%.</li>
-  <li>Provided <strong> technical support and troubleshooting</strong> for both hardware and software issues across the college.</li>
-  <li>Helped in the setup, configuration, and maintenance of servers, workstations, and other IT equipment.</li>
-  <li>Assisted in the deployment, configuration, and maintenance of enterprise software applications. Ensured software was up-to-date and compatible with existing systems.</li>
-</ul>`
+    description: `<ul class="ml-3 list-disc">
+    <li>Developed dynamic macros in <b>VBA & Python</b>, automating business processes and <b>increasing productivity by 50%</b> across the company.</li>
+    <li>Provided technical support and troubleshooting for hardware and software issues, ensuring optimal performance for over 200 users across the college.</li>
+    <li>Helped in the setup, configuration, and maintenance of servers, workstations, and other IT equipment.</li>
+    <li>Designed and implemented <b>SQL queries</b> to support data analysis and reporting needs, reducing manual data manipulation by <b>40%</b>.</li>
+  </ul>`
   },
   {
     college: 'County College of Morris',
     position: 'Data Analyst and Research, Intern',
     image: '/image/college.png',
     description: `<ul class="ml-3 list-disc">
-    <li>Maintains, cleans, and updates <strong> Microsoft  Excel </strong> database of student enrollment in continuing education certifications.</li>
-    <li>Leveraged <strong> Python </strong>  to manipulate, explore, clean analyze and report data on student enrollment.</li>
-    <li>Develop <strong> Tableau </strong> dashboards visualizing net spend, conducting enrollment analysis and creating key insights.</li>
-    <li>Assists staff on research projects, information gathering, automating processes, and provides occasional IT solutions.</li>
+    <li>Maintained, cleaned, and updated a <b>Microsoft Excel database</b> tracking student enrollment in continuing education certifications, ensuring <b>data accuracy for over 500,000 records</b>.</li>
+    <li>Leveraged <b>Python</b> to manipulate, explore, clean analyze and report data on student enrollment.</li>
+    <li>Developed <b>Tableau</b> dashboards visualizing net spend, conducting enrollment analysis and creating key insights.</li>
+    <li>Assisted staff on research projects by gathering information and automating processes, leading to a <b>30% reduction in manual data entry tasks</b>, while also providing occasional IT solutions to improve overall efficiency.</li>
       </ul> 
     `
   },
